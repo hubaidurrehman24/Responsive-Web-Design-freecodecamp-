@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+}
+#header{
+   
+background-color: #eee;
+
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: fixed;
+ padding: 15px 20px;   
+ width: 100%;
+ top:0;
+}
+#header-img{
+height: 50px;
+} 
+#nav-bar{
+    display: flex;
+}
+.nav-link{
+    text-decoration: none;
+    color:#333;
+   
+padding: 10px 15px;
+
+}
+.nav-link:hover{
+text-decoration: underline;
+color: #555;
+}
+section{
+    padding: 20px 20px;
+    margin-top:30px;
+} 
+#contact h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#form{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+#email{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+
+}
+#submit{
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#submit:hover{
+    background-color: #555;
+}
+#Feautures{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 40px 20px;
+    background-color: #f9f9f9;
+    margin-bottom:10px;
+   
+
+}
+.feature{
+    display: flex;
+    align-items: center;
+    width:100%;
+    margin:30px 10px;
+
+}
+.feature img{
+   
+width:70px;
+height:70px;
+margin-right:90px;
+margin-left:120px;
+}
+.feature-content{
+    max-width: 70%;
+}
+#HowItWorks{
+    text-align: center;
+   
+}
+#video{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#Pricing{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 80px;
+}
+.Pricing-card{
+    padding: 20px;
+    margin:10px;
+    border-radius: 10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 25%;
+    border:1px solid #7d7b7b;
+
+}
+.Pricing-card h3{
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom:20px;
+    font-size:1.2em;
+    border-radius: 5px;
+
+    
+}
+.Pricing-card .price{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.Pricing-card button{
+    padding: 10px 20px;
+    background-color: #ffc107;
+color:#000;
+border:none;
+cursor:pointer;
+border-radius:5px;
+margin-top: 20px;
+
+}
+.Pricing-card button:hover{
+    background-color: #e0a800;
+}
+#footer{
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+#footer nav{
+    margin-bottom: 10px;
+}
+#footer nav a{
+    color:#333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+#footer nav a:hover {
+    text-decoration: underline;
+}
+#footer p{
+    color:#666;
+    font-size:0.9em;
+}
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        
+        align-items: center;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+       
+        align-items: flex-start;
+        width: 100%;
+        
+    }
+
+    .nav-link {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    section {
+        padding: 20px 10px;
+        margin-top: 60px; 
+    }
+
+    #contact h2 {
+        font-size: 1.5em;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        
+    }
+
+    #Features, #Pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature img {
+        margin: 0 0 20px 0;
+    }
+
+    .feature-content {
+        max-width: 100%;
+    }
+
+    .Pricing-card {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    #HowItWorks #video {
+        width: 100%;
+    }
+
+    #footer nav {
+        flex-direction: column;
+    }
+
+    #footer nav a {
+        margin: 5px 0;
+    }
+}
